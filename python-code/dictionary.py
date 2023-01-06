@@ -1,6 +1,6 @@
 
 # Dictionary
-"""
+
 car = {'car' : 'ferrari', 'colour' : 'red'}
 print(car ['car'])
 print(car ['colour'])
@@ -115,4 +115,3 @@ if word not in dictionary:
 else:
     print(f"Bu so`z tarjimasi : {dictionary [word]}")
 
-"""
