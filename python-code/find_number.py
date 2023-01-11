@@ -38,7 +38,7 @@ def findmy_number(x=10):
         if answer == "-":
             border_high = guess - 1
         elif answer == "+":
-            border_high = guess + 1
+            border_bottom = guess + 1
         else:
             break
     print(f"Excellent! I found it with {guesses} guess")
