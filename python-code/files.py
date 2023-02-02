@@ -1,76 +1,76 @@
 
 
-#not recommended
-file = open('pi.txt')
-PI = file.read()
-print(PI)
-file.close() 
+# #not recommended
+# file = open('pi.txt')
+# PI = file.read()
+# print(PI)
+# file.close() 
 
 
-#recommended
-with open('pi.txt') as file:
-    pi = file.read()
+# #recommended
+# with open('pi.txt') as file:
+#     pi = file.read()
 
-print(pi)
-pi = pi.rstrip()
-pi = pi.replace('\n','')
-pi = pi.float(pi)
-print(pi)
-
-
-filename = 'data/students.txt'
-with open(filename) as file:
-    for line in file:
-        print(line)
-
-with open(filename) as file:
-    students = file.readlines()
-
-print(students)
-
-students = [student.rstrip() for student in students]
-print(students)
+# print(pi)
+# pi = pi.rstrip()
+# pi = pi.replace('\n','')
+# pi = pi.float(pi)
+# print(pi)
 
 
-# words will write line
-filename = 'new_file.txt'
-name = 'Dua Lipa'
-born = 1998
-with open(filename, 'w') as file: # 'w' - write
-    file.write(name)
-    file.write(str(born))
+# filename = 'data/students.txt'
+# with open(filename) as file:
+#     for line in file:
+#         print(line)
 
-filename = 'new_file.txt'
-name = 'Dua Lipa'
-born = 1998
-with open(filename, 'w') as file:
-    file.write(name+ '\n')
-    file.write(str(born)+ '\n')
+# with open(filename) as file:
+#     students = file.readlines()
 
-filename = 'new_file.txt'
+# print(students)
 
-with open(filename, 'a') as file: #'a' - append
-    file.write('James Bond\n')
-    file.write('2000')
+# students = [student.rstrip() for student in students]
+# print(students)
 
 
-#for dictionary or numbers etc.
-import pickle
+# # words will write line
+# filename = 'new_file.txt'
+# name = 'Dua Lipa'
+# born = 1998
+# with open(filename, 'w') as file: # 'w' - write
+#     file.write(name)
+#     file.write(str(born))
 
-student1 = {'name':'Dua', 'surname':'Lipa', 'born':1998, 'course': 4}
-student2 = {'name':'Bond', 'surname':'James', 'born':1988, 'course': 1}
+# filename = 'new_file.txt'
+# name = 'Dua Lipa'
+# born = 1998
+# with open(filename, 'w') as file:
+#     file.write(name+ '\n')
+#     file.write(str(born)+ '\n')
 
-with open('info'.pkl, 'wb') as file: #'wb' - write Binary
-    pickle.dump(student1,file)
-    pickle.dump(student2,file)
+# filename = 'new_file.txt'
 
-print(student1)
-print(student2)
+# with open(filename, 'a') as file: #'a' - append
+#     file.write('James Bond\n')
+#     file.write('2000')
+
+
+# #for dictionary or numbers etc.
+# import pickle
+
+# student1 = {'name':'Dua', 'surname':'Lipa', 'born':1998, 'course': 4}
+# student2 = {'name':'Bond', 'surname':'James', 'born':1988, 'course': 1}
+
+# with open('info'.pkl, 'wb') as file: #'wb' - write Binary
+#     pickle.dump(student1,file)
+#     pickle.dump(student2,file)
+
+# print(student1)
+# print(student2)
 
 # H/W
 
 
-with open("amaliyot/pi.txt") as file:
+with open("C:\Users\User\Documents\GitHub\python\python\python-code\pi.txt") as file:
     pi = file.read()
 pi = pi.rstrip()  # qator ohiridagi bo'shliqlarni olib tashlash
 pi = pi.replace("\n", "")  # qator tashlash belgisini almashtirish
