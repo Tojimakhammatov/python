@@ -51,9 +51,9 @@ def play(x=10):
         your_guesses = findnumber(x)
         my_guesses = findmy_number(x)
         if your_guesses > my_guesses:
-            print("I am winner!")
-        elif your_guesses < my_guesses:
             print("You are win!")
+        elif your_guesses < my_guesses:
+            print("I am winner!")
         else: print("Equality..")
         any = input("Do you want any? Yes(+) / No(-)")
 
